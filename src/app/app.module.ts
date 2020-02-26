@@ -10,6 +10,7 @@ import { LayoutAppComponent } from './shared/templates/layout-app/layout-app.com
 import { LoginComponent } from './modules/login/login.component';
 import { SignupComponent } from './modules/signup/signup.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
+import { ProdutoComponent } from './modules/produto/produto.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DashboardComponent } from './modules/dashboard/dashboard.component';
     LayoutAppComponent,
     LoginComponent,
     SignupComponent,
-    DashboardComponent
+    DashboardComponent,
+    ProdutoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { LoginComponent } from './modules/login/login.component';
-import { DashboardComponent } from './modules/dashboard/dashboard.component';
-
 import { LayoutAppComponent } from './shared/templates/layout-app/layout-app.component';
 import { LayoutLoginComponent } from './shared/templates/layout-login/layout-login.component';
+
+import { LoginComponent } from './modules/login/login.component';
+import { ProdutoComponent } from './modules/produto/produto.component';
+import { DashboardComponent } from './modules/dashboard/dashboard.component';
 
 const routes: Routes = [
   {
@@ -20,7 +21,9 @@ const routes: Routes = [
     path: '',
     component: LayoutAppComponent,
     children: [
-      { path: 'dashboard', component: DashboardComponent }
+      { path: 'dashboard', component: DashboardComponent },
+      { path: 'produto', component: ProdutoComponent },
+
     ]
   },
 ];
